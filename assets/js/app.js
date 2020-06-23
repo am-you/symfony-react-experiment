@@ -6,6 +6,8 @@ import '../css/app.css';
 
 let interval = null;
 
+// TODO à faire Find a way to deal with touch/mobile keyboard
+
 const App = () => {
 	const inputRef = useRef(null);
 	const outputRef = useRef(null);
