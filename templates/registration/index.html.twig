@@ -1,0 +1,38 @@
+{# templates/registration/index.html.twig #}
+{% extends 'base.html.twig' %}
+{% block body %}
+<div class="form-wrapper">
+    <div class="from-header">Registration Form</div>
+    {{ form_start(form) }}
+    <div class="form-item">
+        <div>
+            {{ form_row(form.name, {'attr': {'class': 'form-control'}}) }}
+        </div>
+    </div>
+    <div class="form-item">
+        <div>
+            {{ form_row(form.email, {'attr': {'class': 'form-control'}}) }}
+        </div>
+    </div>
+    <div class="form-item">
+        <div>
+            {{ form_row(form.password.first, {'attr': {'class':
+                'form-control'}}) }}
+        </div>
+    </div>
+    <div class="form-item">
+        <div>
+            {{ form_row(form.password.second, {'attr': {'class':
+                'form-control'}}) }}
+        </div>
+    </div>
+    <div class="form-item">
+        <div>
+            <button type="submit">
+                Register
+            </button>
+        </div>
+    </div>
+    {{ form_end(form) }}
+</div>
+{% endblock %}
